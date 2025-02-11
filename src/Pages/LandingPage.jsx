@@ -1,23 +1,21 @@
 import Header from "../components/Header"
-import FirstScreen from "../components/FirstScreen"
+import Home from "../components/Home"
 import Aboutus from "../components/About-us"
 import ThirdScreen from "../components/ThirdScreen"
-// import FourthScreen from "../components/FourthScreen"
-import SecondScreen from "../components/SecondScreen"
+// import SecondScreen from "../components/SecondScreen"
 import Stats from "../components/Stats"
+import Goals from "../components/Goals"
 
 const LandingPage = () => {
   return (
     <>
     <Header/>
-    <FirstScreen/>
+    <Home/>
     <Aboutus/>
     <Stats/>
     <ThirdScreen/>
-    {/* <FourthScreen/> */}
-    <SecondScreen/>
-    
-    
+    <Goals/>
+    {/* <SecondScreen/> */}
     </>
   )
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import image3 from "/image3.jpg";
 import image5 from "/image5.jpg";
 import image2 from "/image2.jpg";
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../varients";
 
@@ -40,96 +39,157 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className="relative bg-white overflow-hidden mt-16 mb-25 select-none"
+      className="relative bg-white overflow-hidden mt-16 mb-20  select-none"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* SVG Background */}
+      <motion.div
+        variants={fadeIn("up", 0.7)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.2 }}
+        className="absolute  z-0  "
+      >
+        <svg
+          id="visual"
+          viewBox="-300 0 900 600"
+          width="2000"
+          height="600"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <g transform="translate(404.8532250928495 316.24756292001223)">
+            <path
+              d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
+              fill="#0bd1a6"
+              opacity="0.2"
+            />
+          </g>
+        </svg>
+      </motion.div>
+
+      <motion.div
+        variants={fadeIn("up", 1.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.3 }}
+        className="absolute  z-0"
+      >
+        <svg
+          id="visual"
+          viewBox="-100 0 600 900"
+          width="2000"
+          height="700"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <g transform="translate(404.8532250928495 316.24756292001223)">
+            <path
+              d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
+              fill="#0bd1a6"
+              opacity="0.3"
+            />
+          </g>
+        </svg>
+      </motion.div>
+
+      <motion.div
+        variants={fadeIn("right", 0.7)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.2 }}
+        className="absolute inset-0 z-0"
+      >
+        <svg
+          id="visual"
+          viewBox="400 0 900 600"
+          width="880"
+          height="600"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <g transform="translate(404.8532250928495 316.24756292001223)">
+            <path
+              d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
+              fill="#02b6ff"
+              opacity="0.3"
+            />
+          </g>
+        </svg>
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          {/* Language Selector (Line within a Shape) */}
+          {/* Language Selector */}
           <div className="flex justify-center">
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
-              className="flex items-center bg-[#016f77] rounded-full p-1 border-none text-[#8c9696]"
-            >
-              {["en", "ml", "ar", "ur" , "ba" ].map((lang, index) => (
-                <React.Fragment key={lang}>
-                  <button
-                    className={`text-sm font-light px-4 py-2 rounded-full transition-all duration-300 cursor-pointer ${
-                      language === lang
-                        ? "text-[#016f77] bg-gradient-to-r from-[#e5eaea] to-[#eef1f1] shadow-sm"
-                        : "text-[#d4e3e4] hover:bg-[#518f94]"
-                    }`}
-                    onClick={() => setLanguage(lang)}
-                  >
-                    {lang === "en" && "English"}
-                    {lang === "ml" && "മലയാളം"}
-                    {lang === "ar" && "العربية"}
-                    {lang === "ur" && "اردو"}
-                    {lang === "ba" && "বাংলা"}
-                  </button>
-                  {index < 4 && ( // Add separator between buttons (except the last one)
-                    <div className="w-px h-6 bg-gray-300 mx-1"></div>
-                  )}
-                </React.Fragment>
+            <div className="flex items-center bg-[#016f77] rounded-full p-1 border-none text-[#8c9696] w-auto">
+              {["en", "ml", "ar", "ur", "ba"].map((lang) => (
+                <button
+                  key={lang}
+                  className={`text-sm font-light px-3 py-1 sm:px-4 sm:py-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    language === lang
+                      ? "text-[#016f77] bg-gradient-to-r from-[#e5eaea] to-[#eef1f1] shadow-sm"
+                      : "text-[#d4e3e4] hover:bg-[#518f94]"
+                  } text-xs sm:text-sm`}
+                  onClick={() => setLanguage(lang)}
+                >
+                  {lang === "en" && "English"}
+                  {lang === "ml" && "മലയാളം"}
+                  {lang === "ar" && "العربية"}
+                  {lang === "ur" && "اردو"}
+                  {lang === "ba" && "বাংলা"}
+                </button>
               ))}
-            </motion.div>
+            </div>
           </div>
 
-          
           {/* Main Content */}
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <motion.div
-              variants={fadeIn("up", 0.9)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }} className="sm:text-center lg:text-left flex items-center flex-col justify-center">
-              <h2 className="my-6 text-2xl tracking-tight font-extrabold text-[#016f77] sm:text-3xl md:text-4xl">
+          <main className="mt-10 max-w-3xl mx-auto text-center sm:text-left">
+            <div className="flex flex-col items-center sm:items-start">
+              <h2 className="my-6 text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#394f51]">
                 {content[language].title}
               </h2>
-              <p className="text-[#016f77] text-lg leading-relaxed max-w-2xl">
-                {content[language].description}
-              </p>
-            </motion.div>
+
+              <p className="text-[#394f51] text-base sm:text-lg leading-relaxed max-w-xl text-justify">
+  {content[language].description}
+</p>
+
+            </div>
           </main>
         </div>
       </div>
 
-      {/* Right Section - Image (Fixed Size) */}
+      {/* Right Section - Image */}
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center items-center">
-        <div className="flex justify-center items-center h-[300px] w-full gap-1">
-          {/* First Image - Comes from Top */}
-          <motion.img
-            variants={fadeIn("down", 0.3)} // Comes from top
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }} // Only animate once
+        <div className="flex justify-center items-center h-auto sm:h-[300px] w-full gap-2 mt-6 sm:mt-0">
+          <img
+            // variants={fadeIn("down", 0.3)}
+            // initial="hidden"
+            // whileInView={"show"}
+            // viewport={{ once: true, amount: 0.7 }}
             src={image3}
             alt="Image 3"
-            className="w-32 h-65 object-cover rounded-3xl"
+            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
           />
-
-          {/* Second Image - Comes from Bottom */}
-          <motion.img
-            variants={fadeIn("up", 0.9)} // Comes from bottom
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }} // Only animate once
+          <img
+            // variants={fadeIn("up", 0.9)}
+            // initial="hidden"
+            // whileInView={"show"}
+            // viewport={{ once: true, amount: 0.7 }}
             src={image5}
             alt="Image 5"
-            className="w-32 mb-23 h-65 object-cover rounded-3xl"
+            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
           />
-
-          {/* Third Image - Comes from Top */}
-          <motion.img
-            variants={fadeIn("down", 0.7)} // Comes from top
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }} // Only animate once
+          <img
+            // variants={fadeIn("down", 0.7)}
+            // initial="hidden"
+            // whileInView={"show"}
+            // viewport={{ once: true, amount: 0.7 }}
             src={image2}
             alt="Image 2"
-            className="w-32 h-65 object-cover rounded-3xl"
+            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
           />
         </div>
       </div>

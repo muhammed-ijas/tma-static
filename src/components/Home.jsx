@@ -13,7 +13,7 @@ import image5 from "/image5.jpg";
 
 const images = [image1, image2, image3, image4, image5];
 
-const HeroSection = () => {
+const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -106,4 +106,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Home;

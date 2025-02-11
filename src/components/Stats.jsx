@@ -4,9 +4,10 @@ import CountUp from "react-countup";
 const StatsSection = () => {
   const stats = [
     { label: "States", value: 4 },
-    { label: "Divisions", value: 10 },
+    { label: "Edu Inspectors", value: 4 },
+    { label: "Divisions", value: 9 },
     { label: "Zones", value: 35 },
-    { label: "Edu Officers", value: 44 },
+    { label: "Edu Officers", value: 33 },
     { label: "PECs", value: 731 },
     { label: "Teachers", value: 862 },
     { label: "Students", value: 22714 },
