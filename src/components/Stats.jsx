@@ -81,7 +81,7 @@ const StatsSection = () => {
   return (
     <div ref={sectionRef} className="py-12 bg-gray-100 select-none">
       {/* Stats Container */}
-      <div className="flex justify-center items-center mb-10 text-2xl">
+      <div className="flex justify-center items-center mb-10  text-2xl font-extrabold text-[#394f51]">
         <h1>Empowering the Future</h1>
       </div>
 
@@ -95,7 +95,7 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 min-w-[200px] mx-2 flex flex-col items-center justify-center text-center"
+              className="bg-white shadow-md rounded-lg p-6 flex-shrink-0 min-w-[200px] mx-2 flex flex-col items-center justify-center text-center"
             >
               <div className="text-4xl font-extrabold text-[#1e929b] mb-2">
                 {hasAnimated ? (
@@ -111,7 +111,6 @@ const StatsSection = () => {
           ))}
         </div>
       </div>
-
       {/* Add CSS to hide scrollbar */}
       <style>
         {`

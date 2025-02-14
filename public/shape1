@@ -1,0 +1,29 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(404.8532250928495 316.24756292001223)"><path d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4" fill="#17848c"></path></g></svg>
+
+
+
+  <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.2 }}
+        className="absolute inset-0 z-0 mt-10"
+      >
+        <svg
+        id="visual"
+        viewBox="0 0 900 600"
+        width="900"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(483.25723715293555 267.9047550641888)">
+          <path
+            d="M185.5 -167.1C241.3 -129.6 288.2 -64.8 295.5 7.3C302.8 79.4 270.5 158.9 214.7 219.7C158.9 280.5 79.4 322.8 -7.4 330.2C-94.3 337.6 -188.6 310.2 -254.1 249.4C-319.6 188.6 -356.3 94.3 -362.2 -5.9C-368.1 -106.1 -343.1 -212.1 -277.6 -249.6C-212.1 -287.1 -106.1 -256.1 -20.6 -235.4C64.8 -214.8 129.6 -204.6 185.5 -167.1"
+            fill="#1bb896"
+          ></path>
+        </g>
+      </svg>
+
+      </motion.div>

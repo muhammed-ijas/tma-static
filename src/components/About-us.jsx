@@ -12,7 +12,7 @@ const AboutSection = () => {
     en: {
       title: "About Us",
       description:
-        "Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem volutpat sodales. In ornare porttitor odio sit amet laoreetDonec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem volutpat sodales. In ornare porttitor odio sit amet laoreet.",
+        "Donec porttitor, enim ut dapibus dapibusdapibusdapibuslobortis, lectus sem tincidunt dui, eget ornare lectus ex non libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem volutpat sodales. In ornare porttitor odio sit amet laoreetDonec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem volutpat sodales. In ornare porttitor odio sit amet laoreet.",
     },
     ml: {
       title: "ഞങ്ങളെക്കുറിച്ച്",
@@ -39,11 +39,11 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className="relative bg-white overflow-hidden mt-16 mb-20  select-none"
+      className="relative bg-white overflow-hidden mt-16   select-none"
     >
       {/* SVG Background */}
       <motion.div
-        variants={fadeIn("up", 0.7)}
+        variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.2 }}
@@ -51,7 +51,7 @@ const AboutSection = () => {
       >
         <svg
           id="visual"
-          viewBox="-300 0 900 600"
+          viewBox="-100 0 400 700"
           width="2000"
           height="600"
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const AboutSection = () => {
       </motion.div>
 
       <motion.div
-        variants={fadeIn("up", 1.2)}
+        variants={fadeIn("up", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.3 }}
@@ -79,7 +79,7 @@ const AboutSection = () => {
           id="visual"
           viewBox="-100 0 600 900"
           width="2000"
-          height="700"
+          height="600"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           version="1.1"
@@ -95,17 +95,17 @@ const AboutSection = () => {
       </motion.div>
 
       <motion.div
-        variants={fadeIn("right", 0.7)}
+        variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.2 }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 mt-10"
       >
         <svg
           id="visual"
-          viewBox="400 0 900 600"
-          width="880"
-          height="600"
+          viewBox="500 140 300 50"
+          width="800"
+          height="900"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           version="1.1"
@@ -113,18 +113,19 @@ const AboutSection = () => {
           <g transform="translate(404.8532250928495 316.24756292001223)">
             <path
               d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
-              fill="#02b6ff"
-              opacity="0.3"
+              fill="#0bd1a6"
+              opacity="0.2"
             />
           </g>
         </svg>
       </motion.div>
-
+  
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           {/* Language Selector */}
           <div className="flex justify-center">
-            <div className="flex items-center bg-[#016f77] rounded-full p-1 border-none text-[#8c9696] w-auto">
+            <div className="flex items-center b rounded-full p-1 border-none text-[#8c9696] w-auto  bg-gradient-to-r from-[#0F4D51] to-[#04838C]">
               {["en", "ml", "ar", "ur", "ba"].map((lang) => (
                 <button
                   key={lang}
@@ -151,11 +152,9 @@ const AboutSection = () => {
               <h2 className="my-6 text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#394f51]">
                 {content[language].title}
               </h2>
-
               <p className="text-[#394f51] text-base sm:text-lg leading-relaxed max-w-xl text-justify">
-  {content[language].description}
-</p>
-
+                {content[language].description}
+              </p>
             </div>
           </main>
         </div>
@@ -163,33 +162,33 @@ const AboutSection = () => {
 
       {/* Right Section - Image */}
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 flex justify-center items-center">
-        <div className="flex justify-center items-center h-auto sm:h-[300px] w-full gap-2 mt-6 sm:mt-0">
-          <img
-            // variants={fadeIn("down", 0.3)}
-            // initial="hidden"
-            // whileInView={"show"}
-            // viewport={{ once: true, amount: 0.7 }}
+        <div className="flex justify-center items-center h-auto sm:h-[300px] w-full gap-2 mt-6 sm:mt-0 mb-16">
+          <motion.img
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
             src={image3}
             alt="Image 3"
-            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
+            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl  relative z-0   "
           />
-          <img
-            // variants={fadeIn("up", 0.9)}
-            // initial="hidden"
-            // whileInView={"show"}
-            // viewport={{ once: true, amount: 0.7 }}
+          <motion.img
+            variants={fadeIn("up", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
             src={image5}
             alt="Image 5"
-            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
+            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl"
           />
-          <img
-            // variants={fadeIn("down", 0.7)}
-            // initial="hidden"
-            // whileInView={"show"}
-            // viewport={{ once: true, amount: 0.7 }}
+          <motion.img
+            variants={fadeIn("down", 0.7)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
             src={image2}
             alt="Image 2"
-            className="w-24 h-40 sm:w-32 sm:h-65 object-cover rounded-3xl"
+            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl"
           />
         </div>
       </div>
