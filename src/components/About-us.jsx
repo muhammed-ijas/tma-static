@@ -179,7 +179,7 @@ const AboutSection = () => {
             viewport={{ once: true, amount: 0.7 }}
             src={image5}
             alt="Image 5"
-            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl"
+            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl relative z-0  "
           />
           <motion.img
             variants={fadeIn("down", 0.7)}
@@ -188,7 +188,7 @@ const AboutSection = () => {
             viewport={{ once: true, amount: 0.7 }}
             src={image2}
             alt="Image 2"
-            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl"
+            className="w-26 h-50 sm:w-32 sm:h-65 object-cover rounded-3xl relative z-0  " 
           />
         </div>
       </div>
