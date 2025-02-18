@@ -68,10 +68,7 @@ const Goals = () => {
           our work. Our goals are centered around creating sustainable
           solutions, fostering creativity, and empowering communities to achieve
           their full potential.
-          At our core, we strive to innovate, inspire, and impact lives through
-          our work. Our goals are centered around creating sustainable
-          solutions, fostering creativity, and empowering communities to achieve
-          their full potential.
+          
         </p>
       </div>
     </motion.div>

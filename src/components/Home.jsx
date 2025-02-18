@@ -35,7 +35,6 @@ const Home = () => {
     >
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#000000] to-[#166662] opacity-80"></div>
-
       {/* Content */}
       <div className="container mx-auto z-10 flex flex-col md:flex-row items-center justify-between">
         {/* Left Side */}
@@ -68,7 +67,7 @@ const Home = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }} // Only animate once
           >
-            <button className="  h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white px-8 py-3 mt-10 rounded-full hover:bg-blue-700 mb-8">
+            <button className="h-auto relative z-0 scale-110 transition-all duration-300 hover:scale-100 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white px-8 py-3 mt-10 rounded-full hover:bg-blue-700 mb-8">
               Explore More
             </button>
           </motion.div>

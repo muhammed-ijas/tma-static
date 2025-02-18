@@ -3,6 +3,7 @@ import Home from "../components/Home"
 import Aboutus from "../components/About-us"
 import Goals from "../components/Goals"
 import Stats from "../components/Stats"
+import LeadersMessage from "../components/Leaders-message"
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
     <Aboutus/>
     <Stats/>
     <Goals/>
+    <LeadersMessage/>
     </>
   )
 }
