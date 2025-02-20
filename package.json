@@ -26,8 +26,10 @@
     "react-router-dom": "^7.1.5",
     "react-type-animation": "^3.2.0",
     "scroll-lock": "^2.1.5",
+    "swiper": "^11.2.4",
     "tailwindcss": "^4.0.3",
-    "tma": "file:"
+    "tma": "file:",
+    "tw-elements-react": "^1.0.0-alpha-end"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

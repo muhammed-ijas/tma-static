@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";
+import { FaPlus } from "react-icons/fa";
 
 const StatsSection = () => {
   const stats = [
@@ -97,12 +98,13 @@ const StatsSection = () => {
               key={index}
               className="bg-white shadow-md rounded-lg p-6 flex-shrink-0 min-w-[200px] mx-2 flex flex-col items-center justify-center text-center"
             >
-              <div className="text-4xl font-extrabold text-[#1e929b] mb-2">
+              <div className="text-4xl font-extrabold text-[#1e929b] mb-2 flex items-center gap-1">
                 {hasAnimated ? (
                   <CountUp start={0} end={stat.value} duration={3} />
                 ) : (
                   stat.value
                 )}
+                <FaPlus className="text-lg text-[#1e929b]" />
               </div>
               <div className="text-lg font-semibold text-gray-700">
                 {stat.label}
