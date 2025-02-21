@@ -80,7 +80,7 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="py-12 bg-gray-100 select-none">
+    <div id="stats" ref={sectionRef} className="py-12 bg-gray-100 select-none">
       {/* Stats Container */}
       <div className="flex justify-center items-center mb-10  text-2xl font-extrabold text-[#394f51]">
         <h1>Empowering the Future</h1>

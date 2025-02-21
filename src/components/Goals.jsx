@@ -5,7 +5,9 @@ import Icon from "/icon.png";
 
 const Goals = () => {
   return (
-    <div className="flex flex-col md:flex-row px-8 py-6 items-center justify-center bg-gradient-to-r from-[#11838A] to-[#105256] overflow-hidden">
+    <div
+    id="goals"
+    className="flex flex-col md:flex-row px-8 py-6 items-center justify-center bg-gradient-to-r from-[#11838A] to-[#105256] overflow-hidden select-none">
       {/* Left Side: SVG with Image */}
       <motion.div
         variants={fadeIn("left", 0.5)}

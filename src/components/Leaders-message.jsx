@@ -6,7 +6,7 @@ const leaders = [
   {
     id: 1,
     name: "Sheikh Abubakr Ahmad",
-    role: "Grand Mufti of India",
+    role: "Chief Patron - Thaiba Garden",
     message:
       "Knowledge is the light that guides us. We must strive to learn and teach with sincerity. The pursuit of knowledge is a lifelong journey, and every step brings us closer to the truth.",
     image: "/apusthad.jpg",
@@ -14,7 +14,7 @@ const leaders = [
   {
     id: 2,
     name: "Dr. Muhammed Abdul Hakkim Al-Azhari",
-    role: "Rector - Jamia Markaz",
+    role: "Patron - Thaiba Garden",
     message:
       "True success lies in understanding the divine wisdom and applying it in our lives. The Quran and Sunnah are our guiding principles, and we must adhere to them with devotion.",
     image: "/hakeemusthad.jpg",
@@ -29,7 +29,7 @@ const leaders = [
   },
   {
     id: 4,
-    name: "Umar Mushthak Azhari",
+    name: "Umar Mushthak Azhari Assaqafi",
     role: "Chief - Thaiba Moral Academy",
     message:
       "The Quran is a timeless guide. Let us recite it with devotion and understand its teachings. Every verse is a source of wisdom and guidance for humanity.",
@@ -89,7 +89,9 @@ const ModernCarousel = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center text-center p-6 relative mt-10 mb-20 overflow-hidden">
+    <div
+    id="message"
+    className="w-full flex flex-col items-center text-center p-6 relative mt-10 mb-20 overflow-hidden select-none">
       {/* SVG Background */}
       <motion.div
         variants={fadeIn("up", 0.3)}
@@ -176,14 +178,14 @@ const ModernCarousel = () => {
           onClick={prevSlide} 
           className="p-2 border border-[#105256] rounded-full text-[#105256] text-sm hover:bg-[#105256] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
         >
-          ◀
+         {"<"}
         </button>
         <button 
           onClick={nextSlide} 
           className="p-2 border border-[#105256] rounded-full text-[#105256] text-sm hover:bg-[#105256] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
         >
-          ▶
-        </button>
+         {">"}
+         </button>
       </div>
     </div>
   );

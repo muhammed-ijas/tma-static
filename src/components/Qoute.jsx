@@ -19,7 +19,7 @@ const Qoute = () => {
   return (
     <motion.div
       id="qoute"
-      className="relative text-white flex items-center justify-center px-6 sm:px-12 md:px-20 lg:px-60 xl:px-64 overflow-hidden w-full min-h-screen"
+      className="relative text-white flex items-center justify-center px-6 sm:px-12 md:px-20 lg:px-60 xl:px-64 overflow-hidden w-full min-h-screen select-none"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -32,7 +32,7 @@ const Qoute = () => {
       }}
     >
       {/* Black Overlay */}
-      <div className="absolute inset-0 bg-black/80"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Wrapper for fixed content width with fixed margins */}
       <div className="relative z-10 w-full max-w-screen-lg mx-auto mt-5 mb-5">
@@ -68,9 +68,9 @@ const Qoute = () => {
             className="text-4xl sm:text-5xl md:text-6xl font-medium leading-tight"
           >
           Education is not just about filling minds with knowledge; it&apos;s about{" "}
-            <span className="text-blue-400">igniting curiosity</span>,{" "}
-            <span className="text-blue-400">nurturing dreams</span>, and{" "}
-            <span className="text-blue-400">empowering individuals</span> to create a brighter future for themselves and the world
+            <span className="text-[#29ccd8]">igniting curiosity</span>,{" "}
+            <span className="text-[#29ccd8]">nurturing dreams</span>, and{" "}
+            <span className="text-[#29ccd8]">empowering individuals</span> to create a brighter future for themselves and the world
           </motion.h1>
         </div>
       </div>

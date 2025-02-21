@@ -8,7 +8,7 @@ const Leaders = () => {
     { id: 1, name: "Sheikh Abubakr Ahmad", role: "Grand Mufti of India", image: "/apusthad.jpg" },
     { id: 2, name: "Dr. Muhammed Abdul Hakkim Al-Azhari", role: "Rector - Jamia Markaz", image: "/hakeemusthad.jpg" },
     { id: 3, name: "Suhairudeen Nurani", role: "Director - Thaiba Garden", image: "/zuhairudeenusthad.jpg" },
-    { id: 4, name: "Umar Mushthak Azhari", role: "Chief - Thaiba Moral Academy", image: "/mushthaqusthad.jpg" },
+    { id: 4, name: "Umar Mushthak Azhari Assaqafi", role: "Chief - Thaiba Moral Academy", image: "/mushthaqusthad.jpg" },
   ];
 
   const officeBearers = [
@@ -28,7 +28,9 @@ const Leaders = () => {
   ];
 
   return (
-    <div className="w-full bg-green-50">
+    <div
+    id="leaders"
+    className="w-full bg-green-50 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Leaders Section */}
         <div className="mb-16">
@@ -40,7 +42,7 @@ const Leaders = () => {
               <motion.div
                 key={leader.id}
                 whileHover={{ backgroundColor: "#E6F4EA"  }}
-                className="bg-white shadow-lg rounded-lg p-6 transition duration-300 flex flex-col items-center hover:cursor-pointer hover:bg-gradient-to-r from-[#11838A] to-[#158288] text-gray-800 hover:text-white "
+                className="bg-white shadow-lg rounded-lg p-6 transition duration-300 flex flex-col items-center hover:cursor-pointer hover:bg-gradient-to-r from-[#0d99a0] to-[#189096] text-gray-800 hover:text-white "
                 style={{ width: "240px" }}
               >
                 <img

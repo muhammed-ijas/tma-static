@@ -1,21 +1,27 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleMobileClick = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <nav className="w-full bg-white backdrop-blur-md border-none z-50 shadow-sm">
+    <nav className="w-full bg-white backdrop-blur-md border-none z-50 shadow-sm fixed top-0 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <img
-              className="h-12 w-auto  hover:scale-105"
-              src="/logo.png"
-              alt="Logo"
-            />
+            <a
+              href="#Home"
+              className="hover:scale-105 transition-transform duration-300"
+            >
+              <img className="h-12 w-auto" src="/logo.png" alt="Logo" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -23,7 +29,7 @@ export default function Navbar() {
             {["Home", "About", "Gallery", "Contact"].map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`#${item}`}
                 className="text-sm font-medium text-[#084C61] hover:text-[#05668D] 
                   transition-all duration-300 hover:-translate-y-[2px]"
               >
@@ -31,9 +37,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#"
+              href="#donate"
               className="ml-4 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white 
-                px-5 py-2 rounded-lg shadow-md hover:scale-105 transition-all duration-300"
+    px-5 py-2 rounded-lg shadow-md hover:scale-105 transition-all duration-300"
             >
               Donate
             </a>
@@ -70,7 +76,8 @@ export default function Navbar() {
             {["Home", "About", "Gallery", "Contact"].map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`#${item}`}
+                onClick={handleMobileClick}
                 className="py-2 px-4 rounded-lg text-[#084C61] hover:bg-white/30 
                   transition-all duration-300"
               >
@@ -78,7 +85,8 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#"
+              href="#donate"
+              onClick={handleMobileClick}
               className="mt-2 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white 
                 py-2 px-4 rounded-lg shadow-md hover:scale-[1.02] transition-all duration-300"
             >
