@@ -5,7 +5,7 @@ import Goals from "../components/Goals"
 import Stats from "../components/Stats"
 import LeadersMessage from "../components/Leaders-message"
 import Qoute from "../components/Qoute.jsx"
-import Mentors from "../components/mentors.jsx"
+import Leaders from "../components/Leaders.jsx"
 
 const LandingPage = () => {
   return (
@@ -17,7 +17,7 @@ const LandingPage = () => {
     <Goals/>
     <LeadersMessage/>
     <Qoute/>
-    <Mentors/>
+    <Leaders/>
     </>
   
   )
