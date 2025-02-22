@@ -8,7 +8,7 @@ import Qoute from "../components/Qoute.jsx"
 import Leaders from "../components/Leaders.jsx"
 import Donate from "../components/Donate.jsx"
 import Footer from "../components/Footer.jsx"
-import Testimonials from "../components/Testimonials.jsx"
+// import Testimonials from "../components/Testimonials.jsx"
 
 const LandingPage = () => {
   return (
@@ -22,7 +22,7 @@ const LandingPage = () => {
     <Qoute/>
     <Leaders/>
     <Donate/>
-    <Testimonials/>
+    {/* <Testimonials/> */}
     <Footer/>
     </>
   

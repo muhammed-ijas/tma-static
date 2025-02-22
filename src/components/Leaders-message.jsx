@@ -101,7 +101,7 @@ const ModernCarousel = () => {
         className="absolute -left-10 z-0 opacity-20 hidden md:block"
       >
         <svg width="400" height="400" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#0bd1a6"
+          <path fill="#24A8E0"
               opacity="0.2" d="M150 0C230 0 300 70 300 150S230 300 150 300 0 230 0 150 70 0 150 0Z" />
         </svg>
       </motion.div>
@@ -113,7 +113,7 @@ const ModernCarousel = () => {
         className="absolute -left-10 z-0 opacity-20 hidden md:block"
       >
         <svg width="400" height="400" viewBox="100 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#0bd1a6"
+          <path fill="#24A8E0"
               opacity="0.2" d="M150 0C230 0 300 70 300 150S230 300 150 300 0 230 0 150 70 0 150 0Z" />
         </svg>
       </motion.div>
@@ -126,7 +126,7 @@ const ModernCarousel = () => {
         className="absolute top-40 right-0 z-0 opacity-30 hidden md:block"
       >
         <svg width="500" height="500" viewBox=" 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#0bd1a6"
+          <path fill="#24A8E0"
               opacity="0.2" d="M150 0C230 0 300 70 300 150S230 300 150 300 0 230 0 150 70 0 150 0Z" />
         </svg>
       </motion.div>
@@ -146,9 +146,9 @@ const ModernCarousel = () => {
               transition={slideTransition}
               className="text-center md:text-left"
             >
-              <h3 className="text-2xl font-semibold text-[#105256]">{leaders[currentIndex].name}</h3>
-              <p className="text-[#105256] text-sm font-medium">{leaders[currentIndex].role}</p>
-              <p className="text-[#105256] mt-2 text-justify">{leaders[currentIndex].message}</p>
+              <h3 className="text-2xl font-semibold text-[#135672]">{leaders[currentIndex].name}</h3>
+              <p className="text-[#135672] text-sm font-medium">{leaders[currentIndex].role}</p>
+              <p className="text-[#135672] mt-2 text-justify">{leaders[currentIndex].message}</p>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -176,13 +176,13 @@ const ModernCarousel = () => {
       <div className="flex justify-center gap-4 mt-10 absolute bottom-3 left-1/2 transform -translate-x-1/2">
         <button 
           onClick={prevSlide} 
-          className="p-2 border border-[#105256] rounded-full text-[#105256] text-sm hover:bg-[#105256] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
+          className="p-2 border border-[#24A8E0] rounded-full text-[#24A8E0] text-sm hover:bg-[#24A8E0] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
         >
          {"<"}
         </button>
         <button 
           onClick={nextSlide} 
-          className="p-2 border border-[#105256] rounded-full text-[#105256] text-sm hover:bg-[#105256] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
+          className="p-2 border border-[#24A8E0] rounded-full text-[#24A8E0] text-sm hover:bg-[#24A8E0] hover:text-white transition-all w-8 h-8 flex items-center justify-center"
         >
          {">"}
          </button>

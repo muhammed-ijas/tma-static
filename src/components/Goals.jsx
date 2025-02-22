@@ -7,7 +7,7 @@ const Goals = () => {
   return (
     <div
     id="goals"
-    className="flex flex-col md:flex-row px-8 py-6 items-center justify-center bg-gradient-to-r from-[#11838A] to-[#105256] overflow-hidden select-none">
+    className="flex flex-col md:flex-row px-8 py-6 items-center justify-center bg-gradient-to-r from-[#135672] to-[#2299cc] overflow-hidden select-none">
       {/* Left Side: SVG with Image */}
       <motion.div
         variants={fadeIn("left", 0.5)}

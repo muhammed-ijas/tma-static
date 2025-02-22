@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Transition } from "@headlessui/react";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-white backdrop-blur-md border-none z-50  fixed top-0 select-none">
+    <nav className="w-full bg-[#dff5ff] backdrop-blur-md border-none z-50  fixed top-0 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -30,7 +29,7 @@ export default function Navbar() {
               <a
                 key={item}
                 href={`#${item}`}
-                className="text-sm font-medium text-[#084C61] hover:text-[#05668D] 
+                className="text-sm font-medium text-[#192f67] hover:text-[#3e4f7b] 
                   transition-all duration-300 hover:-translate-y-[2px]"
               >
                 {item}
@@ -38,8 +37,8 @@ export default function Navbar() {
             ))}
             <a
               href="#donate"
-              className="ml-4 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white 
-    px-5 py-2 rounded-lg shadow-md hover:scale-105 transition-all duration-300"
+              className="ml-4 bg-gradient-to-r from-[#1b82ad] to-[#136385] text-white 
+    px-4 py-1 rounded-lg shadow-md hover:scale-105 transition-all duration-300 text-1xl"
             >
               Donate
             </a>
@@ -78,7 +77,7 @@ export default function Navbar() {
                 key={item}
                 href={`#${item}`}
                 onClick={handleMobileClick}
-                className="py-2 px-4 rounded-lg text-[#084C61] hover:bg-white/30 
+                className="py-2 px-4 rounded-lg text-[#1b82ad] hover:bg-white/30 
                   transition-all duration-300"
               >
                 {item}
@@ -87,7 +86,7 @@ export default function Navbar() {
             <a
               href="#donate"
               onClick={handleMobileClick}
-              className="mt-2 bg-gradient-to-r from-[#0F4D51] to-[#04838C] text-white 
+              className="mt-2 bg-gradient-to-r from-[#1b82ad] to-[#125978] text-white 
                 py-2 px-4 rounded-lg shadow-md hover:scale-[1.02] transition-all duration-300"
             >
               Donate

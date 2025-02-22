@@ -55,7 +55,7 @@ const Qoute = () => {
             <g transform="translate(404.8532250928495 316.24756292001223)">
               <path
                 d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
-                fill="#0bd1a6"
+                fill="#2facff"
                 opacity="0.2"
               />
             </g>
@@ -68,9 +68,9 @@ const Qoute = () => {
             className="text-4xl sm:text-5xl md:text-6xl font-medium leading-tight"
           >
           Education is not just about filling minds with knowledge; it&apos;s about{" "}
-            <span className="text-[#29ccd8]">igniting curiosity</span>,{" "}
-            <span className="text-[#29ccd8]">nurturing dreams</span>, and{" "}
-            <span className="text-[#29ccd8]">empowering individuals</span> to create a brighter future for themselves and the world
+            <span className="text-[#2facff]">igniting curiosity</span>,{" "}
+            <span className="text-[#2facff]">nurturing dreams</span>, and{" "}
+            <span className="text-[#2facff]">empowering individuals</span> to create a brighter future for themselves and the world
           </motion.h1>
         </div>
       </div>

@@ -22,7 +22,7 @@ const Donate = () => {
       }}
     >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+      <div className="absolute inset-0   bg-gradient-to-r from-[#000000] to-[#00000000] opacity-90"></div>
 
       {/* Main Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

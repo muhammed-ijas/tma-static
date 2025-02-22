@@ -35,14 +35,14 @@ const Leaders = () => {
         {/* Leaders Section */}
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8">
-            Our <span className="text-[#158288]">Leadership</span>
+            Our <span className="text-[#24A8E0]">Leadership</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-6 ">
             {leaders.map((leader) => (
               <motion.div
                 key={leader.id}
                 whileHover={{ backgroundColor: "#E6F4EA"  }}
-                className="bg-white shadow-lg rounded-lg p-6 transition duration-300 flex flex-col items-center hover:cursor-pointer hover:bg-gradient-to-r from-[#0d99a0] to-[#189096] text-gray-800 hover:text-white "
+                className="bg-white shadow-lg rounded-lg p-6 transition duration-300 flex flex-col items-center hover:cursor-pointer hover:bg-gradient-to-r from-[#24A8E0] to-[#1c88b6] text-gray-800 hover:text-gray-100"
                 style={{ width: "240px" }}
               >
                 <img
@@ -62,13 +62,13 @@ const Leaders = () => {
         {/* Office Bearers Section */}
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8">
-            Office <span className="text-[#158288]">Bearers</span>
+            Office <span className="text-[#24A8E0]">Bearers</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
             {officeBearers.map((bearer) => (
               <motion.div
                 key={bearer.id}
-                className="bg-white shadow-lg rounded-lg p-5 transition duration-300 flex flex-col items-center  hover:cursor-pointer hover:bg-gradient-to-r from-[#11838A] to-[#158288] text-gray-800 hover:text-white"
+                className="bg-white shadow-lg rounded-lg p-5 transition duration-300 flex flex-col items-center  hover:cursor-pointer hover:bg-gradient-to-r from-[#24A8E0] to-[#1c88b6] text-gray-800 hover:text-gray-100"
                 style={{ width: "200px" }}
               >
                 <img
@@ -89,7 +89,7 @@ const Leaders = () => {
         <div className="text-center mb-8">
           <button
             onClick={() => setShowDivisionalHeads(!showDivisionalHeads)}
-            className="px-5 py-1 bg-white border border-gray-300 text-[#105256]  rounded-lg text-sm font-medium transition duration-300   hover:bg-[#105256] hover:text-white  hover:cursor-pointer"
+            className="px-5 py-1 bg-white border border-gray-300 text-[#24A8E0]  rounded-lg text-sm font-medium transition duration-300   hover:bg-[#24a8e0] hover:text-gray-100  hover:cursor-pointer"
           >
             {showDivisionalHeads ? "Hide Divisional Heads" : "View More"}
           </button>
@@ -103,7 +103,7 @@ const Leaders = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">
-              Divisional <span className="text-[#158288]">Heads</span>
+              Divisional <span className="text-[#24A8E0]">Heads</span>
             </h2>
             <div className="w-full flex justify-center">
               <div className="w-full max-w-4xl">
@@ -111,7 +111,7 @@ const Leaders = () => {
                   {divisionalHeads.map((head) => (
                     <motion.div
                       key={head.id}
-                      className="bg-white shadow-lg rounded-lg p-4 transition duration-300 flex flex-col items-center w-full max-w-[160px]  hover:cursor-pointer hover:bg-gradient-to-r from-[#11838A] to-[#158288] text-gray-800 hover:text-white"
+                      className="bg-white shadow-lg rounded-lg p-4 transition duration-300 flex flex-col items-center w-full max-w-[160px]  hover:cursor-pointer hover:bg-gradient-to-r from-[#5b7fdc] to-[#446fdc] text-gray-800 hover:text-gray-100"
                     >
                       <img
                         src={head.image}

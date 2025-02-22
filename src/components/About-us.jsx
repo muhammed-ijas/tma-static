@@ -61,8 +61,8 @@ const AboutSection = () => {
           <g transform="translate(404.8532250928495 316.24756292001223)">
             <path
               d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
-              fill="#0bd1a6"
-              opacity="0.2"
+              fill="#1ebcff"
+              opacity="0.3"
             />
           </g>
         </svg>
@@ -87,7 +87,7 @@ const AboutSection = () => {
           <g transform="translate(404.8532250928495 316.24756292001223)">
             <path
               d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
-              fill="#0bd1a6"
+              fill="#1ebcff"
               opacity="0.3"
             />
           </g>
@@ -113,8 +113,8 @@ const AboutSection = () => {
           <g transform="translate(404.8532250928495 316.24756292001223)">
             <path
               d="M160.9 -153.4C210.1 -111.7 252.5 -55.9 260 7.4C267.4 70.7 239.8 141.4 190.6 172.8C141.4 204.1 70.7 196 4.1 191.9C-62.5 187.8 -124.9 187.6 -149.9 156.3C-174.9 124.9 -162.5 62.5 -164.2 -1.8C-166 -66 -182 -132 -157 -173.7C-132 -215.3 -66 -232.7 -5.1 -227.6C55.9 -222.5 111.7 -195.1 160.9 -153.4"
-              fill="#0bd1a6"
-              opacity="0.2"
+              fill="#1ebcff"
+              opacity="0.3"
             />
           </g>
         </svg>
@@ -125,13 +125,13 @@ const AboutSection = () => {
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           {/* Language Selector */}
           <div className="flex justify-center">
-            <div className="flex items-center b rounded-full p-1 border-none text-[#8c9696] w-auto  bg-gradient-to-r from-[#0F4D51] to-[#04838C]">
+            <div className="flex items-center b rounded-full p-1 border-none text-[#8c9696] w-auto  bg-gradient-to-r from-[#1b82ad] to-[#125978]">
               {["en", "ml", "ar", "ur", "ba"].map((lang) => (
                 <button
                   key={lang}
                   className={`text-sm font-light px-3 py-1 sm:px-4 sm:py-2 rounded-full transition-all duration-300 cursor-pointer ${
                     language === lang
-                      ? "text-[#016f77] bg-gradient-to-r from-[#e5eaea] to-[#eef1f1] shadow-sm"
+                      ? "text-[#1b82ad] bg-gradient-to-r from-[#e5eaea] to-[#eef1f1] shadow-sm"
                       : "text-[#d4e3e4] hover:bg-[#518f94]"
                   } text-xs sm:text-sm`}
                   onClick={() => setLanguage(lang)}
