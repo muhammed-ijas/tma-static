@@ -54,7 +54,7 @@ const Home = () => {
         }}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#000000] to-[#166662] opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#000000] to-[#00000000] opacity-90"></div>
         {/* Content */}
         <div className="container mx-auto z-10 flex flex-col md:flex-row items-center justify-between">
           {/* Left Side */}
@@ -105,23 +105,6 @@ const Home = () => {
               <FaTwitter onClick={handleTwitterClick} className="w-6 h-6 hover:text-[#04838C] cursor-pointer" />
             </motion.div>
           </div>
-
-          {/* Right Side - Image Slider */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="hidden md:block md:mr-16 lg:mr-40"
-          >
-            <div
-              className="w-96 h-96 bg-cover bg-center rounded-tl-[50%] rounded-br-[50%] lg:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto"
-              style={{
-                backgroundImage: `url(${
-                  images[(currentImageIndex + 1) % images.length]
-                })`,
-              }}
-            ></div>
-          </motion.div>
         </div>
       </div>
 
