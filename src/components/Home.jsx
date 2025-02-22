@@ -131,11 +131,9 @@ const Home = () => {
         className="fixed bottom-4 right-4 z-50 cursor-pointer group"
       >
         <div className="relative flex items-center">
-          {/* Message Bubble */}
           <div className="absolute right-12 bg-white text-gray-800 px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-sm">
             Chat with us on WhatsApp
           </div>
-          {/* WhatsApp Icon */}
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <img
               src={whatsapp}
