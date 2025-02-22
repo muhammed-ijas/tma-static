@@ -47,7 +47,7 @@ const Testimonials = () => {
           </h4>
           <p className="text-sm text-gray-500">{testimonials[currentIndex].role}</p>
           <p className="mt-4 text-gray-600 leading-relaxed text-sm">
-            "{testimonials[currentIndex].text}"
+            &quot;{testimonials[currentIndex].text}&quot;
           </p>
         </div>
         <div className="flex justify-center gap-2 mt-6">
